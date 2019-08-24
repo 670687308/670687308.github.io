@@ -1,0 +1,153 @@
+.bann-txt strong {font-size: 20px; font-weight: bold; line-height: 1; } 
+.navbar-expand-xl .navbar-nav .nav-link {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 14px;
+  }
+
+  .lim-arrow span {
+     top: -98px;
+    left: 372px;
+    font-size: 16px;
+    width: 254px;
+}
+
+#banner h4 {
+    font-size: 18px;
+    padding-left: 24px;
+    padding-top: 10px;
+}
+
+#whySection h3{ word-break: break-all;}
+
+.challenge-box {
+    position: relative;
+    left: -90px;
+}
+.blank-list{ max-width: 22%;}
+.blank-list ul {
+    padding-top: 152px;
+}
+.blank-list ul li:nth-child(3) {
+    padding-top: 12px;
+}
+.blank-list ul li:nth-child(4) {
+    padding-top: 8px;
+}
+#challenge .note-txt {
+    margin-left: 290px;
+
+}
+
+@media (max-width: 1400px){
+.challenge-box {
+    left: -13px;
+}
+#challenge .note-txt {
+    margin-left: 328px;
+}
+}
+
+@media (max-width: 1200px){
+.challenge-box {
+    left: -213px;
+}
+#challenge .note-txt {
+    margin-left: 383px;
+}
+
+.btn-signIn {    
+    font-size: 14px;
+}
+
+.btn-spot {    
+    font-size: 14px;
+}
+
+
+}
+
+@media screen and (max-width: 1024px){
+#challenge .note-txt {
+    margin-left: 340px;
+}
+}
+
+@media screen and (max-width: 991px){
+.challenge-box {
+    left: 0px;
+    margin: 0 10px;
+}
+#challenge .note-txt {
+    margin-left: 0;
+}
+}
+@media screen and (max-width: 640px){
+    .lim-arrow span {
+        top: -110px;
+        left: 242px;
+        font-size: 16px;
+        width: 254px;
+        transform: rotate(-2deg);
+    }
+    #countryLang ul li {
+        padding-right: 16px;
+    }
+}
+
+
+@media screen and (max-width: 567px){
+.lim-arrow span {
+    top: -59px;
+    left: 255px;
+   transform: rotate(-46deg);
+}
+#banner h4 {
+    font-size: 14px;
+}
+}
+
+
+@media screen and (max-width: 480px){
+
+    .lim-arrow span {
+        top: -135px;
+        left: 26px;
+        font-size: 13px;
+        transform: rotate(0deg);
+    }
+.lim-arrow::before {
+    left: 95px;
+    transform: rotate(-100deg) !important;
+    background-size: 70px;
+    top: -136px;
+}
+.bann-txt {
+    font-size: 13px;
+}
+
+
+}
+@media screen and (max-width: 420px){
+.lim-arrow::before {
+    top: -112px;
+}
+.lim-arrow span {
+    top: -99px;}
+
+    #banner .promo-txt:before {
+   
+        transform: scaleY(1.5);
+    }
+    #banner h4 {
+             margin-top: -10px;
+    }
+}
+
+
+@media screen and (max-width: 420px){
+    .lim-arrow {top: 375px;}
+    .btn-signIn {margin-bottom: 10px;}
+    .btn-spot {vertical-align: top;}
+
+}

@@ -1,0 +1,43 @@
+.bann-txt{font-weight: unset;}
+.bann-txt strong {font-size: 20px; font-weight: bold; line-height: 1; } 
+.lim-arrow span {text-align: center; left: 308px;}
+.lim-arrow::before {left: 262px;}
+.accordion::after {margin-top: 0;}
+#pointer {width: 212px;}
+#banner .promo-txt::before {background-size: 440px 51px;}
+
+
+@media (max-width: 1440px) {
+	.modal #challenge .note-txt {margin-left: 420px;}
+}
+
+@media (max-width: 1400px) {
+	#challenge .note-txt {max-width: 656px;}
+	.modal #challenge .note-txt {margin-left: 295px; max-width: 595px;}
+
+}
+
+@media (max-width: 1199px) {
+	.accordion {font-size: 18px;}
+	.accordion:after {font-size: 20px;}
+}
+
+@media (max-width: 567px) {
+	#banner .promo-txt::before {background-size: contain;}
+}
+
+@media (max-width: 480px) {
+	.lim-arrow span {left: 20px; top: -135px;}
+	.lim-arrow::before {top: -140px; left: 55px;}
+	.accordion::after {margin-top: -29px;}
+	#testimonial h3 {font-size: 20px;}
+	.list-inline-item:not(:last-child) {margin-right: .2rem;}
+	#testimonial h5 span {font-size: 22px;}
+	#testimonial h5 { font-size: 18px; }
+	.star-icon {padding-left: 10px;}
+	.btn-changes {    margin-top: 110px; }
+}
+
+@media (max-width: 374px) {
+	.lim-arrow {top: 350px;}
+}

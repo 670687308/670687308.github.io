@@ -1,0 +1,26 @@
+{
+  "short_name": "Lingoda",
+  "name": "Lingoda | Learn languages online",
+  "icons": [
+    {
+      "src": "/images/logos/launcher-icon-1x.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "images/logos/launcher-icon-2x.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "images/logos/launcher-icon-4x.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "theme_color": "#3AA9DF",
+  "background_color": "#3AA9DF",
+  "start_url": "/?utm_source=homescreen",
+  "display": "standalone",
+  "orientation": "portrait"
+}

@@ -1,0 +1,104 @@
+<li class="nav-item" ng-if="section && !lingoda.user" main-navigation-item>
+    <a
+        class="nav-link"
+        ng-href="{{ lingoda.actions.url('how_it_works', { section: translatedSection }) }}"
+        target="_self"
+        onclick="dataLayer.push({'event': 'button-how_it_works-click'});"
+        >{{ 'navigation.how-it-works' | trans: {}: 'public-common' }}</a
+    > </li
+><!-- Login --><li
+    class="nav-item"
+    ng-if="lingoda.authenticated && !lingoda.user"
+    main-navigation-item
+>
+    <a
+        class="nav-link"
+        ng-href="{{ lingoda.actions.url('login') }}"
+        target="_self"
+        onclick="dataLayer.push({'event': 'button-login-click'});"
+        >{{ 'navigation.user.login' | trans: {}: 'public-common' }}</a
+    > </li
+><!-- Home --><li
+    class="nav-item"
+    ng-if="lingoda.user && !lingoda.user.student.showClasses()"
+    main-navigation-item
+>
+    <react component="'components.StudentNavigationHome'"></react> </li
+><!-- My classes --><li
+    class="nav-item nav-my-classes"
+    ng-if="lingoda.user.student.showClasses()"
+    main-navigation-item
+>
+    <react
+        component="'components.StudentNavigationMyClasses'"
+        props="{isMobileNavigationScope: navigationType == 'mobile'}"
+    ></react> </li
+><!-- Book classes --><li
+    class="nav-item nav-book-classes"
+    ng-if="lingoda.user"
+    main-navigation-item
+>
+    <react
+        component="'components.StudentNavigationBookClasses'"
+        props="{isMobileNavigationScope: navigationType == 'mobile'}"
+    ></react> </li
+><!-- My course --><li class="nav-item nav-my-course" ng-if="lingoda.user" main-navigation-item>
+    <react
+        component="'components.StudentNavigationMyCourse'"
+        props="{isMobileNavigationScope: navigationType == 'mobile'}"
+    ></react> </li
+><!-- Store --><li
+    class="nav-item nav-store"
+    ng-if="lingoda.user.student.showClasses()"
+    main-navigation-item
+>
+    <react
+        component="'components.StudentNavigationStore'"
+        props="{isMobileNavigationScope: navigationType == 'mobile'}"
+    ></react> </li
+><!-- Credits --><li
+    class="nav-item nav-credits"
+    ng-if="lingoda.user.student.showClasses()"
+    main-navigation-item
+>
+    <react component="'components.StudentNavigationCredits'"></react> </li
+><!-- Prices --><li
+    class="nav-item"
+    ng-class="{'no-separator': lingoda.user.verified}"
+    ng-if="section && (!lingoda.user || !lingoda.user.student.showClasses())"
+    main-navigation-item
+>
+    <react component="'components.StudentNavigationPrices'"></react> </li
+><!-- Trial class --><li
+    class="nav-item no-separator"
+    ng-if="(!lingoda.user || lingoda.user.isTrialAvailable())"
+    main-navigation-item
+>
+    <react component="'components.StudentNavigationTrialClass'"></react> </li
+><!-- Notifications --><li
+    class="nav-item no-separator"
+    style="padding-right: 0;"
+    main-navigation-item
+>
+    <react component="'components.NotificationAlertFab'"></react> </li
+><!-- User menu --><li
+    class="nav-item nav-user-menu"
+    ng-if="lingoda.user.student"
+    main-navigation-item
+>
+    <react
+        component="'components.StudentNavigationUserMenu'"
+        props="{isMobileNavigationScope: navigationType == 'mobile'}"
+    ></react> </li
+><!-- Mobile --><li class="nav-item mobile-item" ng-if="!navigationFull">
+    <a
+        class="nav-link fa fa-bars"
+        ng-if="!layout.navigationMobileVisible"
+        ng-click="layout.navigationMobileVisible = true"
+    ></a>
+    <a
+        class="nav-link fa fa-close"
+        ng-if="layout.navigationMobileVisible"
+        ng-click="layout.navigationMobileVisible = false"
+    ></a>
+</li>
